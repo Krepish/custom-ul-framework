@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link type="text/css" rel="stylesheet" href="style.css">
+	<script src="cu.js"  type="text/javascript"></script>
+</head>
+<body>
+
+		<h2>Without any class</h2>
+		<ul>
+			<li>11</li>
+    	<li>12</li>
+    	<li>13</li>
+    </ul>
+
+    <h2>Class "older"</h2>
+		<ul id="first" class="first">
+    	<li>21</li>
+    	<li>22</li>
+    	<li>23</li>
+    </ul>
+
+		<h2>Class "rounded"</h2>
+	  <ul id="second" class="second">
+    	<li>lorem ipsum dolor sit amet consectetur adipiscing elit</li>
+    	<li>lorem ipsum dolor sit amet consectetur adipiscing elit</li>
+    	<li>lorem ipsum dolor sit amet consectetur adipiscing elit</li>
+    </ul>
+
+		<h2>Class "bullet"</h2>
+    <ul id="third" class="third">
+    	<li>lorem ipsum dolor sit amet consectetur adipiscing elit</li>
+    	<li>lorem ipsum dolor sit amet consectetur adipiscing elit</li>
+    	<li>lorem ipsum dolor sit amet consectetur adipiscing elit</li>
+    </ul>
+
+    <script>
+    	cu('#first').makeCustomUl('older');
+    	cu('.second').makeCustomUl('rounded');
+    	cu('.third').makeCustomUl('bullet');
+    </script> 
+
+</body>
+</html>

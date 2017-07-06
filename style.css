@@ -1,0 +1,124 @@
+h2{
+text-align: center;
+}
+	/*Class rounded*/
+}
+.older {
+  
+}
+.older li {
+	list-style: none;
+  margin: 0 auto;
+  width: 660px;
+  counter-reset: li;
+  border-bottom: dashed 1px #006699;
+  margin-top: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  padding: 5px;
+}
+.older a {
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  line-height: 30px;
+  color: #3A3A3A;
+  font-family: 'EB Garamond', serif;
+  font-size: 20px;
+}
+.older a:before {
+  display: inline-block;
+  content: counter(li);
+  counter-increment: li;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  border: solid 1px #dedede;
+  margin-right: 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 0, 0, 0.1) inset;
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 24px;
+  -webkit-transition: .4s linear;
+  transition: .4s linear;
+}
+.older a:hover{
+	text-decoration: underline;
+}
+.older a:hover:before {
+  color:#D72F2C;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+		/*Class rounded*/
+.rounded {
+margin: 0 auto;
+width: 660px;
+counter-reset: li; 
+list-style: none; 
+font: 14px "Trebuchet MS", "Lucida Sans";
+padding: 0;
+text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+.rounded a {
+position: relative;
+display: block;
+padding: .4em .4em .4em 2em;
+margin: .5em 0;
+background: #DAD2CA;
+color: #444;
+text-decoration: none;
+border-radius: .3em;
+transition: .3s ease-out;
+}
+.rounded a:hover {background: #E9E4E0;}
+.rounded a:hover:before {transform: rotate(360deg);}
+.rounded a:before {
+content: counter(li);
+counter-increment: li;
+position: absolute;
+left: -1.3em;
+top: 50%;
+margin-top: -1.3em;
+background: #8FD4C1;
+height: 2em;
+width: 2em;
+line-height: 2em;
+border: .3em solid white;
+text-align: center;
+font-weight: bold;
+border-radius: 2em;
+transition: all .3s ease-out;
+}
+
+/*Class bullet*/
+.bullet {
+margin-left: 0;
+list-style: none;
+counter-reset: li;
+}
+.bullet li {
+position: relative;
+margin-bottom: 1.5em;
+border: 3px solid #CADFCF;
+padding: 0.6em;
+border-radius: 4px;
+background: #FEFEFE;
+color: #231F20;
+font-family: "Trebuchet MS", "Lucida Sans";
+}
+.bullet li:before {
+position: absolute;
+top: -0.7em;
+padding-left: 0.4em;
+padding-right: 0.4em;
+font-size: 16px;
+font-weight: bold;
+color: #DCC24B;
+background: #FEFEFE;
+border-radius: 50%;
+counter-increment: li;
+content: counter(li);
+}
+.bullet a:hover{
+	text-decoration: none;
+}
